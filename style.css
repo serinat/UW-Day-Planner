@@ -36,6 +36,10 @@ body {
     border-top: 1px solid white;;
     background-color: lightgrey;
   }
+
+  .float-left {
+    padding-top: 10px;
+  }
   
   .hour {
     background-color: #ffffff;
