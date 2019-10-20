@@ -19,15 +19,15 @@ $(document).ready(function () {
 
     //Save button event handler (function saveRow) --> uses localStorage
     //create click event handler on save button
-    $(".saveBtn").on("click", function(event) {
-        
+    $(".saveBtn").on("click", function (event) {
+
         var eventEl = event.target.previousElementSibling.firstElementChild.value;
         var key = event.target.previousElementSibling.firstElementChild.id
         localStorage.setItem(key, eventEl);
-        
-});
+
+    });
     //Change row styles (function updateRowStyle) --> moment.js
-     //getHours function
+    //getHours function
     function updateRowStyle() {
         var d = new Date();
         var n = d.getHours();
@@ -42,11 +42,11 @@ $(document).ready(function () {
             } else if (i = index) {
                 background = "red";
             }
-            $("textarea")[i].style.background = background;
+            $("textarea")[i].style.backgroundColor = background;
         } if (n > 17) {
-            $("textarea")[index].style.background = "past"
+            $("textarea")[index].style.backgroundColor = "grey";
         } else if (n < 9) {
-            $("textarea")[index].style.background = "future"
+            $("textarea")[index].style.backgroundColor = "green";
         }
     }
     updateRowStyle();
@@ -66,5 +66,4 @@ $(document).ready(function () {
     }
 
     loadStorage();
-
 });
