@@ -36,11 +36,11 @@ $(document).ready(function () {
         for (var i = 0; i <= 8; i++) {
             var background;
             if (i < index) {
-                background = "past";
+                background = "grey";
             } else if (i > index) {
-                background = "future";
+                background = "green";
             } else if (i = index) {
-                background = "present";
+                background = "red";
             }
             $("textarea")[i].style.background = background;
         } if (n > 17) {
