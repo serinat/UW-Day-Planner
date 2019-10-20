@@ -5,7 +5,7 @@ body {
   }
   
   textarea{
-    background: transparent;
+    background-color: lightgrey;
     border: none;
     resize: none;
     color: #000000;
@@ -35,7 +35,6 @@ body {
     white-space: pre-wrap;
     height: 80px;
     border-top: 1px solid white;;
-    background-color: lightgrey;
   }
 
   .float-left {

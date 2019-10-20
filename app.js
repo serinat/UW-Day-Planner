@@ -13,7 +13,7 @@ $(document).ready(function () {
 
     //Set date at top of page (function showTodaysDate) --> moment.js
     //function showTodaysDate() {
-    var now = moment().format("dddd, MMMM Do, YYYY, h:mm");
+    var now = moment().format("dddd, MMMM Do, YYYY, h:mm A");
     $('#currentDay').append(now);
 
 
@@ -24,10 +24,7 @@ $(document).ready(function () {
         var eventEl = event.target.previousElementSibling.firstElementChild.value;
         var key = event.target.previousElementSibling.firstElementChild.id
         localStorage.setItem(key, eventEl);
-
-
-
-
+        
 });
     //Change row styles (function updateRowStyle) --> moment.js
      //getHours function
@@ -37,19 +34,19 @@ $(document).ready(function () {
         var index = Math.max(Math.min(n - 9, 8), 0);
 
         for (var i = 0; i <= 8; i++) {
-            var bckgrdColor;
+            var background;
             if (i < index) {
-                bckgrdColor = "lightgrey";
+                background = "past";
             } else if (i > index) {
-                bckgrdColor = "green";
+                background = "future";
             } else if (i = index) {
-                bckgrdColor = "red";
+                background = "present";
             }
-            $("textarea")[i].style.backgroundColor = bckgrdColor;
+            $("textarea")[i].style.background = background;
         } if (n > 17) {
-            $("textarea")[index].style.backgroundColor = "lightgrey"
+            $("textarea")[index].style.background = "past"
         } else if (n < 9) {
-            $("textarea")[index].style.backgroundColor = "green"
+            $("textarea")[index].style.background = "future"
         }
     }
     updateRowStyle();
