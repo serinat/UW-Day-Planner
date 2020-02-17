@@ -2,10 +2,10 @@
 
 - Poor time management can result in missed meetings and deadlines or create the appearance of unprofessionalism. A daily planner allows employees to see their day at a glance, schedule time effectively, and improve productivity.
 
-## Instruction/Demo
+## Instructions/Demo
+
 - Create a simple calendar application that allows the user to save events for each hour of the day. This app will run in the browser and feature dynamically updated HTML and CSS powered by jQuery.
 The app should display standard business hours (9 a.m. to 5 p.m.). Each time slot should represent one hour and contain the following:
-
 
 The time
 
@@ -19,7 +19,7 @@ You'll need to use the Moment.js library to work with date and time. Be sure to 
 
 ![demo](demo/05-Third-Party-APIs_02-Homework_Assets_05-Third-Party-APIs-homework-demo.gif)
 
-- Functional, deployed application.
+Functional, deployed application.
 
 GitHub repository with a unique name and a README describing project.
 
